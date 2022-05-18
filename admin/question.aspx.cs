@@ -52,6 +52,16 @@ public partial class admin_question : System.Web.UI.Page
         }
     }
 
+
+    protected void gridview_examquestion_RowCommand(object sender, GridViewCommandEventArgs e)
+    {
+        if (e.CommandName == "deletequestion")
+        {
+            deletequestion(Convert.ToInt32(e.CommandArgument));
+            getallquestion();
+        }
+    }
+
     //method for deleting question for the question id 
     public void deletequestion(int id)
     {
@@ -84,11 +94,4 @@ public partial class admin_question : System.Web.UI.Page
     }
 
 
-    protected void gridview_examquestion_RowCommand(object sender, GridViewCommandEventArgs e)
-    {
-        if(e.CommandName == "deletequestion")
-        {
-            deletequestion(Convert.ToInt32(e.CommandArgument));
-        }
-    }
 }

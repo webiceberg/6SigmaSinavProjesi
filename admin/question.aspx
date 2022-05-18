@@ -34,7 +34,7 @@
                                     <asp:HyperLink ID="btn_editexam" runat="server" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" NavigateUrl='<%# "~/admin/editquestion.aspx?qid=" + Eval("question_id") %>'>
                                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Düzenle
                                     </asp:HyperLink>
-                                    <asp:LinkButton ID="btn_deleteexam" runat="server" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" CommandArgument='<%# Eval("exam_id") %>' CommandName="deletequestion">
+                                    <asp:LinkButton ID="btn_deleteexam" runat="server" CssClass="btn" BackColor="#343A40" BorderStyle="None" ForeColor="White" CommandArgument='<%# Eval("question_id") %>' CommandName="deletequestion">
                                             <i class="fa fa-trash" aria-hidden="true"></i> Sil
                                     </asp:LinkButton>
                                 </ItemTemplate>
