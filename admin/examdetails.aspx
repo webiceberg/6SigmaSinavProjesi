@@ -24,7 +24,7 @@
                                 <asp:BoundField DataField="exam_name" HeaderText="Sınav Ismi">
                                     <HeaderStyle Font-Bold="true" CssClass="col-md-2" />
                                 </asp:BoundField>
-                                <asp:BoundField DataField="exam_description" HeaderText="Sınav Açıklaması" NullDisplayText="No Discription">
+                                <asp:BoundField DataField="exam_description" HeaderText="Sınav Açıklaması" NullDisplayText="Bir açıklama yok">
                                     <HeaderStyle Font-Bold="true" CssClass="col-md-2" />
                                 </asp:BoundField>
                                 <asp:BoundField DataField="exam_date" HeaderText="Sınav Tarihi" DataFormatString="{0:d}">

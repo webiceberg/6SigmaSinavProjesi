@@ -143,7 +143,7 @@ public partial class exam : System.Web.UI.Page
                     else
                     {
                         wrong_number = wrong_number + (100 / gridview_examquestion.Rows.Count);
-                        break;
+                       break;
                     }
                 }
                 count++;
@@ -199,7 +199,7 @@ public partial class exam : System.Web.UI.Page
             cmd.Parameters.AddWithValue("@totalquestion", tquestion);
             cmd.Parameters.AddWithValue("@username", getstringuser.Text);
             cmd.Parameters.AddWithValue("@examdate", DateTime.Now.ToString());
-
+         
             try
             {
                 con.Open();
